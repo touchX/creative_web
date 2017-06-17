@@ -1,0 +1,27 @@
+$brand-color:#24a445;
+.header {
+    .titles {
+        .logo_mark {
+            left: 0px;
+        }
+        .sns_links {
+            right: 0px;
+        }
+    }
+}
+
+nav {
+    .side {
+        left: 16px;
+    }
+}
+
+.btn_goup {
+    svg {
+        stroke: $brand-color;
+    }
+}
+
+.st1 {
+    color: $brand-xcolor;
+}

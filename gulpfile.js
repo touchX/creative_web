@@ -18,7 +18,12 @@ gulp.task('server',function(){
         server:"./"
     });
 
-   
-    gulp.watch("*.html").on('change', browserSync.reload);
+    gulp.watch('./assets/scss/*.scss',['scss']);
+    gulp.watch(["*.html",'./assets/css/*.css']).on('change', browserSync.reload);
 });
 
+gulp.task("scss", function () {
+    gulp.src(
+        "./assets/scss/*.scss"
+    ).pipe(plugins.scss()).pipe(gulp.dest("./assets/css"));
+});
